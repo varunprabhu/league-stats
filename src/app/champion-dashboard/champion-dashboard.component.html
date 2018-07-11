@@ -1,0 +1,14 @@
+<p>
+  champion-dashboard works!
+</p>
+
+<h2>{{object}}</h2>
+
+<div *ngIf="champions">
+    <h1>{{champions.length}}</h1>
+
+    <div *ngFor="let champion of champions">
+        <h3>{{champion.id}}</h3>
+    </div>
+</div>
+
