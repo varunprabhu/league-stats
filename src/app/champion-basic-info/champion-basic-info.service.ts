@@ -19,11 +19,11 @@ export class ChampionBasicInfoService {
         const apiUrl = `${baseUrl}/static-data/v3/champions?locale=en_US&tags=image&dataById=true&api_key=${apiKey}`;
 
 
-        let array: ChampionInformation[] = [];
-        for(let i = 0; i < 10; i++) {
-          array.push(new ChampionInformation('id', 'name', 'key', 'imagename'));
+        const array: ChampionInformation[] = [];
+        for (let i = 0; i < 10; i++) {
+            array.push(new ChampionInformation(i, 'name', 'key', 'imagename'));
 
         }
-        return of(array)
+        return of(array);
     }
 }
