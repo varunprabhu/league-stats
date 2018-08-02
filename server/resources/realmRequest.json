@@ -1,0 +1,42 @@
+{
+  "request": "https://na1.api.riotgames.com/lol/static-data/v3/realms",
+  "requestHeaders": {
+    "Origin": "https://developer.riotgames.com",
+    "Accept-Charset": "application/x-www-form-urlencoded; charset=UTF-8",
+    "X-Riot-Token": "RGAPI-9d2412c8-eb89-46a0-beea-a917f451f852",
+    "Accept-Language": "en-US,en;q=0.9",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36"
+  },
+  "responseCode": 200,
+  "responseHeaders": {
+    "Content-Encoding": "gzip",
+    "X-Method-Rate-Limit-Count": "1:3600",
+    "Vary": "Accept-Encoding",
+    "Connection": "keep-alive",
+    "X-Method-Rate-Limit": "10:3600",
+    "transfer-encoding": "chunked",
+    "X-NewRelic-App-Data": "PxQFWFFSDwQTV1hXBggDV1QTGhE1AwE2QgNWEVlbQFtcC2VOchRAFgtba04hJmweXAsNT0RFVhINUhtXAxICT0ZRFQVdTGZXUglUQx1RHVJIBhlRVlUBBwVRTU8GHRVUV1MEUQEEU1NUA14GD11WEB8DWA1CBG4=",
+    "Date": "Thu, 02 Aug 2018 02:45:09 GMT",
+    "Content-Type": "application/json;charset=utf-8"
+  },
+  "responseBody": {
+    "lg": "8.15.1",
+    "dd": "8.15.1",
+    "l": "en_US",
+    "n": {
+      "summoner": "8.15.1",
+      "map": "8.15.1",
+      "champion": "8.15.1",
+      "language": "8.15.1",
+      "mastery": "7.23.1",
+      "sticker": "8.15.1",
+      "item": "8.15.1",
+      "rune": "7.23.1",
+      "profileicon": "8.15.1"
+    },
+    "profileiconmax": 28,
+    "v": "8.15.1",
+    "cdn": "https://ddragon.leagueoflegends.com/cdn",
+    "css": "8.15.1"
+  }
+}

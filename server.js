@@ -1,3 +1,4 @@
+// Get dependencies
 const express = require('express');
 const path = require('path');
 const http = require('http');
@@ -15,24 +16,31 @@ app.use(bodyParser.urlencoded({
 }));
 
 // Point static path to dist
-app.use(express.static(path.join(__dirname, 'dist')));
+console.log(__dirname);
+app.use(express.static(path.join(__dirname, 'dist/riot-app')));
 
 // Set our api routes
 app.use('/api', api);
 
 // Catch all other routes and return the index file
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist/riot-app/index.html'));
-});
 
-// Get port from environment and store in Express.
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve('dist/index.html'));
+});
+/**
+ * Get port from environment and store in Express.
+ */
 const port = process.env.PORT || '3000';
 app.set('port', port);
 
-// Create HTTP server.
+/**
+ * Create HTTP server.
+ */
 const server = http.createServer(app);
 
-// Listen on provided port, on all network interfaces.
+/**
+ * Listen on provided port, on all network interfaces.
+ */
 server.listen(port, () => console.log(`API running on localhost:${port}`));
 
 const mongoose = require('mongoose');
@@ -79,4 +87,6 @@ Kitten.find(function (err, kittens) {
 
 Kitten.find({
   name: /^fluff/
-}, callback);
+}, (res) => {
+  console.log(res)
+});
