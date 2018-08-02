@@ -5,10 +5,12 @@
 <h2>{{object}}</h2>
 
 <div *ngIf="champions">
-    <h1>{{champions.length}}</h1>
+  <ul>
+  <h1>{{champions.length}}</h1>
 
-    <div *ngFor="let champion of champions">
-        <h3>{{champion.id}}</h3>
-    </div>
+  <li *ngFor="let champion of champions">
+    <h3>{{ champion | json }}</h3>
+  </li>
+  </ul>
 </div>
 

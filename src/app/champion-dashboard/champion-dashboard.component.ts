@@ -9,7 +9,7 @@ import { ChampionInformation } from '../champion-information';
 })
 export class ChampionDashboardComponent implements OnInit {
 
-  object: Object;
+  object;
   champions: ChampionInformation[];
 
 
@@ -17,10 +17,10 @@ export class ChampionDashboardComponent implements OnInit {
   constructor(private championService: ChampionBasicInfoService) { }
 
   ngOnInit() {
+    this.object = 'hello world';
     this.championService.getChampionInfo().subscribe(result => {
-      // this.champions = result;
-      // console.log(this.champions);
-      this.object = result;
+      console.log(result);
+      this.champions = result;
     });
   }
 
