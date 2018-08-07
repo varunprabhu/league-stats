@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import { ChampionInformation } from '../champion-information';
 
 import { Observable, of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
+import { ChampionInformation } from '../../models/champion-information';
 
 @Injectable({
     providedIn: 'root'

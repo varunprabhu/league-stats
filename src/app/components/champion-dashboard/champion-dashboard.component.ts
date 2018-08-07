@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ChampionBasicInfoService } from '../champion-basic-info/champion-basic-info.service';
-import { ChampionInformation } from '../champion-information';
+import { ChampionInformation } from '../../models/champion-information';
+import { ChampionBasicInfoService } from '../../services/champion-basic-info/champion-basic-info.service';
 
 @Component({
   selector: 'app-champion-dashboard',

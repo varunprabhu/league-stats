@@ -25,7 +25,7 @@ app.use('/api', api);
 // Catch all other routes and return the index file
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve('dist/index.html'));
+  res.sendFile(path.resolve('dist/riot-app/index.html'));
 });
 /**
  * Get port from environment and store in Express.

@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { ChampionPortraitComponent } from './champion-portrait/champion-portrait.component';
-import { ChampionDashboardComponent } from './champion-dashboard/champion-dashboard.component';
+import { ChampionPortraitComponent } from './components/champion-portrait/champion-portrait.component';
+import { ChampionDashboardComponent } from './components/champion-dashboard/champion-dashboard.component';
 
 @NgModule({
   declarations: [
