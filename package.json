@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build && node server.js",
+    "dev": "concurrently \"ng serve\" \"node server.js -p 3000\"",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -21,6 +22,7 @@
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
     "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
     "core-js": "^2.5.4",
     "express": "^4.16.3",
     "http": "0.0.0",
