@@ -1,4 +1,5 @@
 import {Image} from './image';
+import {SummonerSpellVars} from './summoner-spell-vars';
 
 export class SummonerSpell {
     id: string;
@@ -10,21 +11,9 @@ export class SummonerSpell {
     cooldownBurn: string;
     cost: number[];
     costBurn: string;
-    "effect": [
-        null,
-        [
-            95
-            ],
-        [
-            20
-            ]
-        ],
-    "effectBurn": [
-        null,
-        "95",
-        "20"
-        ],
-    "vars": [],
+    effect: number[];
+    effectBurn: string[];
+    vars: SummonerSpellVars[];
     key: string;
     summonerLevel: number;
     modes: string[];
